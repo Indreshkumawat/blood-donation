@@ -115,7 +115,7 @@ const Home = () => {
             </div>
             <br />
             <div style={{position:"sticky"}} className='w-full bg-indianred text-white-900 h-max text-sm text-center font-bold'>
-                <code> LifeLine @ {new Date().getFullYear()} || Made by Tarun</code>
+                <code> LifeLine @ {new Date().getFullYear()} || Made by Indresh</code>
             </div>
         </div>
     )

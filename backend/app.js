@@ -20,10 +20,16 @@ app.use(
 	})
 );
 
-
-mongoose.connect(process.env.CONNECT, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (e) => {
-	console.log(e ? e : "Connected successfully to database");
-});
+const connectDB = async ()=>{
+	try {
+		mongoose.connect(process.env.CONNECT, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true }, (e) => {
+			console.log(e ? e : "Connected successfully to database");
+		});
+	} catch (error) {
+		console.log("Connection failed..");
+	}
+}
+connectDB();
 
 app.use("/auth", require("./routers/authRouter"));
 app.use("/user", require("./routers/userRouter"));

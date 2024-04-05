@@ -5,10 +5,10 @@ const Contact = () => {
     const data = [
         {
             title: "LifeLine related queries, feedback and suggestions", body: [
-                "Tarun Grover",
-                "Ghaziabad , 201014",
-                "Phone No : 8755299377",
-                "E-mail:- grovertarun612@gmail.com"
+                "Indresh Kumawat",
+                "Jaipur , 302019",
+                "Phone No : 7665514322",
+                "E-mail:- indreshkumawat16@gmail.com"
             ]
         },
         {

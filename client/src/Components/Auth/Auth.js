@@ -84,7 +84,7 @@ const Auth = (props) => {
             };
         }
 
-        await axios.post(`/auth/${handle}`, formData, { withCredentials: true }).then(async (res) => { }, (err) => alert(err.response.data.errorMessage));
+        await axios.post(`/auth/login/${handle}`, formData, { withCredentials: true }).then(async (res) => { }, (err) => alert(err.response.data.errorMessage));
         await getLoggedIn();
         navigate(`/${handle == "bank" ? handle : "user"}/profile`)
     };
